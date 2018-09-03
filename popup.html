@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        button {
-            height: 30px;
-            width: 30px;
-            outline: none;
-        }
-    </style>
 </head>
 <body>
-<input type="button" value="start" id="startTimer" >
-<input type="button" value="stop" id="stopTimer" >
+<div id="waiting">
+    <p class="counter">press start</p>
+    <input class="start_button" type="button" value="start" id="startTimer" >
+</div>
+<div id="working" style="display:none">
+    <p class="counter" id="counter">READY</p>
+    <input class="end_button" type="button" value="stop" id="stopTimer">
+</div>
+
+<script src="jquery-3.3.1.min.js"></script>
 <script src="popup.js"></script>
+<link rel="stylesheet" type="text/css" href="popup.css">
+
 </body>
 </html>

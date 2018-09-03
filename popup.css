@@ -1,0 +1,38 @@
+html {
+    background: #222;
+    color: #ebebeb;
+    width: 8em;
+    height: 8em;
+}
+
+input[type="button"].start_button {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: darkgreen;
+    color: #fff;
+    border-style: none;
+}
+
+input[type="button"].start_button:hover {
+    background-color: greenyellow;
+    color: #fff;
+}
+
+input[type="button"].end_button {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: red;
+    color: #fff;
+    border-style: none;
+}
+
+input[type="button"].end_button:hover {
+    background-color: #ff9000;
+    color: #fff;
+}
+
+p.counter {
+    font-size: 2em;
+}
