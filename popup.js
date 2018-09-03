@@ -61,10 +61,7 @@ function formatCount(num) {
     var result = "";
     var min = Math.floor((num / 60) % 60);
     var sec = Math.floor(num % 60);
-
-    if (min > 0) {
-        result += min + ":";
-    }
+    result += ('00' + min).slice(-2) + ":";
     result += ('00' + sec).slice(-2);
     return result;
 }
