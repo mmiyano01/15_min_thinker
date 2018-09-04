@@ -32,7 +32,7 @@ function countdownStartFunction(tab) {
         countdown();
         if(count === 0){
             is_running = false;
-            alert("Time's up!")
+            alert("時間切れ！一人で悩まず誰かに相談しましょう。")
             clearInterval(timer_id);
         }}, 1000)
     return true;

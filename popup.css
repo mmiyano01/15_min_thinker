@@ -1,7 +1,7 @@
 html {
     background: #222;
     color: #ebebeb;
-    width: 8em;
+    width: 9em;
     height: 8em;
 }
 
@@ -34,5 +34,24 @@ input[type="button"].end_button:hover {
 }
 
 p.counter {
-    font-size: 2em;
+    font-size: 3em;
+}
+
+p.sub_text {
+    font-size: 0.1em;
+}
+
+.marquee {
+    width: 400px;
+    padding-left: 400px;
+    white-space: nowrap;
+
+    animation-name: marquee;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes marquee {
+    from    { transform: translate(0%); }
+    100%,to { transform: translate(-100%); }
 }
