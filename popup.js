@@ -3,12 +3,7 @@ var timer_id = null;
 var count_text = '';
 
 var proverbs = [
-    'まだ慌てる時間じゃない。 - 仙道(スラムダンク)',
-    '不安はむしろ勝利者の所有（もの）だ。 - 三島由紀夫',
-    '失敗すればやり直せばいい。やり直してダメなら、もう一度工夫し、もう一度やり直せばいい。 - 松下幸之助',
-    'どんな難問にも必ず答えがある - 下町ロケット',
-    'Shut the fuck up and write some code.',
-    'Have you tried turning it off and on again? - The IT Crowd',
+    'まだ慌てる時間じゃない。',
 ]
 
 $(document).ready(function(){
@@ -56,6 +51,9 @@ function displayCountDown(num){
             setCountText(count);
             var countdown = function(){
                 count--;
+                if (count === 59){
+                    setCountText(count)
+                }
                 document.getElementById("counter").innerHTML=formatCount(count);
                 document.getElementById("count_text").innerHTML=count_text;
 
